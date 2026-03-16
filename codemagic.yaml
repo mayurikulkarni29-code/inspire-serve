@@ -5,11 +5,12 @@ workflows:
     environment:
       node: 18
       vars:
-        EXPO_TOKEN: aMAQJkq2vOQN_VxA0-xgOAa6fUizX28tBG9xHRXs
+        EXPO_TOKEN: $EXPO_TOKEN
 
     scripts:
       - npm install
-      - npm install -g eas-cli
+      - npm install -g eas-cli@latest
+      - eas --version
       - echo "Testing Expo authentication"
       - eas whoami || true
       - eas build --platform ios --non-interactive
