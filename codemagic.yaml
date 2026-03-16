@@ -4,6 +4,8 @@ workflows:
 
     environment:
       node: 18
+      groups:
+        - global
       vars:
         EXPO_TOKEN: $EXPO_TOKEN
 
