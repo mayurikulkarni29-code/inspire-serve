@@ -3,6 +3,8 @@ workflows:
     name: Expo iOS Build
     environment:
       node: 18
+      groups:
+        - default
     scripts:
       - npm install
       - npm install -g eas-cli
