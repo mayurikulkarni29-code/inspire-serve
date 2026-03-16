@@ -1,0 +1,11 @@
+workflows:
+  expo-ios-build:
+    name: Expo iOS Build
+    environment:
+      node: 18
+    scripts:
+      - npm install
+      - npx expo prebuild
+      - npx expo run:ios --configuration Release
+    artifacts:
+      - ios/build/**/*.ipa
