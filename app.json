@@ -1,0 +1,54 @@
+{
+  "expo": {
+    "name": "InspireServe",
+    "slug": "inspire-serve",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/images/is_updated_logo.jpg",
+    "userInterfaceStyle": "automatic",
+    "scheme": "inspireserve",
+    "splash": {
+      "image": "./assets/images/is_updated_logo.jpg",
+      "resizeMode": "cover",
+      "backgroundColor": "#000000"
+    },
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.mayurikulkarni.inspireserve",
+      "infoPlist": {
+        "ITSAppUsesNonExemptEncryption": false
+      }
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/images/icon.png",
+        "backgroundColor": "#000000"
+      },
+      "android": {
+        "adaptiveIcon": {
+          "foregroundImage": "./assets/images/icon.png",
+          "backgroundColor": "#000000"
+        },
+        "navigationBar": {
+          "backgroundColor": "#000000",
+          "barStyle": "light-content"
+        },
+        "statusBar": {
+          "backgroundColor": "#000000",
+          "barStyle": "light-content"
+        }
+      },
+      "predictiveBackGestureEnabled": false,
+      "package": "com.mayurikulkarni.inspireserve"
+    },
+    "plugins": [
+      "expo-router"
+    ],
+    "extra": {
+      "router": {},
+      "eas": {
+        "projectId": "a182d61d-8a8c-40a8-81af-484c8362447e"
+      }
+    }
+  }
+}
