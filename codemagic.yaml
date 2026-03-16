@@ -4,7 +4,7 @@ workflows:
     environment:
       node: 18
       groups:
-        - default
+        - global
     scripts:
       - npm install
       - npm install -g eas-cli
