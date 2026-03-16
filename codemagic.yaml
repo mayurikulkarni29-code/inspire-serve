@@ -1,14 +1,15 @@
 workflows:
   expo-ios-build:
     name: Expo iOS Build
+
     environment:
       node: 18
-      groups:
-        - global
+      vars:
+        EXPO_TOKEN: aMAQJkq2vOQN_VxA0-xgOAa6fUizX28tBG9xHRXs
+
     scripts:
       - npm install
       - npm install -g eas-cli
-      - eas --version
+      - echo "Testing Expo authentication"
+      - eas whoami || true
       - eas build --platform ios --non-interactive
-    artifacts:
-      - build/ios/**/*.ipa
